@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev:server": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
-    "start": "ts-node src/server.ts"
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -15,8 +15,7 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.25",
-    "socket.io": "^2.3.0",
-    "ts-node": "^9.0.0"
+    "socket.io": "^2.3.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
