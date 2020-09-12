@@ -9,14 +9,6 @@ import routes from './routes';
 
 const app = express();
 
-const connectedUsers: any = {};
-
-app.use((request: Request, response: Response, next: NextFunction) => {
-  request.connectedUsers = connectedUsers;
-
-  return next();
-});
-
 app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
   if (err instanceof AppError) {
     return response.status(err.statusCode).json({
