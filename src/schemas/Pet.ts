@@ -2,7 +2,7 @@ import mongoose, { Document, Schema } from 'mongoose';
 
 export interface Pet extends Document {
   name: string;
-  animal: 'cachorro' | 'gato';
+  animal: string;
 }
 
 const PetSchema = new Schema(
