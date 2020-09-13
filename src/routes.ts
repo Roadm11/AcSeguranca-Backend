@@ -6,9 +6,9 @@ const routes = Router();
 
 const petController = new PetController();
 
-routes.get('/api/pets', petController.index);
-routes.post('/api/pets', petController.create);
-routes.put('/api/pets/:id', petController.update);
-routes.delete('/api/pets/:id', petController.delete);
+routes.get('/pets', petController.index);
+routes.post('/pets', petController.create);
+routes.put('/pets/:id', petController.update);
+routes.delete('/pets/:id', petController.delete);
 
 export default routes;
